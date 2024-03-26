@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container {
+    text-align: center; /* Center-align all text */
+}
+
+h1, p {
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to headings and paragraphs */
+    color: #c483b4;
+}
+
+h2,p {
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to headings */
+    font-size: 100px; /* Set font size to 100 pixels */
+    color: #c483b4;
+
+}
+
+button {
+    margin-top: 20px; /* Add some spacing above the button */
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff; /* Green background */
+    border: none;
+    color: white; /* White text */
+    padding: 15px 32px; /* Padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 30px;
+    border: 2px solid #ba83ac;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    
+}
+
+button:hover {
+    background-color: #ba83ac; /* Darker green on hover */
+}
+
+button:active {
+    transform: scale(0.96);
+}
+button::before{
+    background-image: radial-gradient(circle, #ba83ac 20%, transparent 20%),
+        radial-gradient(circle, #ba83ac 20%, transparent 20%)
+        radial-gradient(circle, #ba83ac 20%, transparent 20%)
+        radial-gradient(circle, #ba83ac 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 20%;
+    background-position: 5% 90%, 10% 90%, 10% 90% ;
+    animation: topBubbles 0.6 ease-in-out infinite;
+}
+@keyframes topBubbles {
+    50%{
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+    100%{
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 63% 10%, 90% 20%;
+    
+    }
+    
+}
+
+a{
+    color: black;
+}
+
+.container {
+    text-align: center; /* Center aligns the content horizontally */
+}
+
+.centered-image {
+    display: block; /* Makes the image a block element */
+    margin: 0 auto 20px; /* Centers the image horizontally and adds 20px margin below */
+}
+

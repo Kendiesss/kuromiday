@@ -1,0 +1,76 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+h1, p {
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to headings and paragraphs */
+    color: #c483b4;
+}
+
+h2,p {
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to headings */
+    font-size: 100px; /* Set font size to 100 pixels */
+    color: #c483b4;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    align-items: center; /* Center items vertically */
+    height: 100vh; /* Set container height to viewport height */
+}
+
+.left-gif, .right-gif {
+    flex: 0 0 30%; /* Take up 30% of the available space */
+}
+
+#gif1, #gif2 {
+    max-width: 100%; /* Limit maximum width of GIFs */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#png1, #png2 {
+    max-width: 100%; /* Limit maximum width of PNGs */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.centered-image {
+    max-width: 40%; /* Limit maximum width of the centered image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Makes the image a block element */
+    margin: 0 auto 20px; /* Centers the image horizontally and adds 20px margin below */
+}
+
+
+
+button {
+    margin-top: auto; /* Push the button to the very bottom */
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff; /* Green background */
+    border: none;
+    color: white; /* White text */
+    padding: 15px 32px; /* Padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    
+}
+
+button:hover {
+    background-color: #ba83ac; /* Darker green on hover */
+}
+
+a{
+    color: black;
+}
+
